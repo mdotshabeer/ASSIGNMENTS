@@ -1,1 +1,194 @@
 
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter marks of the 1ST subject: 65\n",
+      "Enter marks of the 2ND subject: 85\n",
+      "Enter marks of the 3RD subject: 98\n",
+      "Enter marks of the 4TH subject: 94\n",
+      "Enter marks of the 5TH subject: 75\n",
+      "Grade: A-1\n"
+     ]
+    }
+   ],
+   "source": [
+    "mark1=int(input(\"Enter marks of the 1ST subject: \"))\n",
+    "mark2=int(input(\"Enter marks of the 2ND subject: \"))\n",
+    "mark3=int(input(\"Enter marks of the 3RD subject: \"))\n",
+    "mark4=int(input(\"Enter marks of the 4TH subject: \"))\n",
+    "mark5=int(input(\"Enter marks of the 5TH subject: \"))\n",
+    "avg=(mark1+mark2+mark3+mark4+mark5)/5\n",
+    "if(avg>=80):\n",
+    "    print(\"Grade: A-1\")\n",
+    "elif(avg>=70 and avg<80):\n",
+    "    print(\"Grade: A\")\n",
+    "elif(avg>=60 and avg<70):\n",
+    "    print(\"Grade: B\")\n",
+    "elif(avg>=50 and avg<60):\n",
+    "    print(\"Grade: C\")\n",
+    "elif(avg>=40 and avg<50):\n",
+    "    print(\"Grade: D\")\n",
+    "else:\n",
+    "    print(\"Grade: FAIL\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 45\n",
+      "This is an odd number.\n"
+     ]
+    }
+   ],
+   "source": [
+    "NUMBER = int(input(\"Enter a number: \"))\n",
+    "RESULT = NUMBER % 2\n",
+    "if RESULT > 0:\n",
+    "    print(\"This is an odd number.\")\n",
+    "else:\n",
+    "    print(\"This is an even number.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number of items in the list =  9\n"
+     ]
+    }
+   ],
+   "source": [
+    "list=[1,3,5,'A','S','D',9,5,6]\n",
+    "print (\"Number of items in the list = \", len(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "How many numbers: 5\n",
+      "Enter number 3\n",
+      "Enter number 2\n",
+      "Enter number 1\n",
+      "Enter number 6\n",
+      "Enter number 5\n",
+      "Sum of elements in given list is : 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = []\n",
+    "num = int(input('How many numbers: '))\n",
+    "for n in range(num):\n",
+    " numbers = int(input('Enter number '))\n",
+    "list.append(numbers)\n",
+    "print(\"Sum of elements in given list is :\", sum(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "How many numbers? 5\n",
+      "Enter number: 8\n",
+      "Enter number: 56\n",
+      "Enter number: 85\n",
+      "Enter number: 75\n",
+      "Enter number: 45\n",
+      "Largest element of the list is : 85\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = []\n",
+    "count = int(input('How many numbers? '))\n",
+    "for n in range(count):\n",
+    "    num = int(input('Enter number: '))\n",
+    "    list.append(num)\n",
+    "print(\"Largest element of the list is :\", max(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 3, 1, 0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [5, 4, 3, 1, 0, 8, 13, 21, 34, 55, 89]\n",
+    "\n",
+    "new_list = []\n",
+    "\n",
+    "for item in a:\n",
+    "  \n",
+    " if item < 5:\n",
+    "    new_list.append(item)\n",
+    "print(new_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
